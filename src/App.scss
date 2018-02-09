@@ -1,0 +1,110 @@
+body {
+  min-width: 700px;
+  width: auto !important;
+  input, select {
+    font-size: 14pt;
+  }
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 70px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: red;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+$rjsTest-button-red: #E76E66;
+$rjsTest-button-hover-red: darken($rjsTest-button-red, 20%);
+$rjsTest-button-blue: #459FEB;
+$rjsTest-button-hover-blue: darken($rjsTest-button-blue, 20%);
+
+.outboxButtonBar {
+  button {
+    padding: .25em 0;
+    margin: .4em 0 0 1em;
+    width: 8em;
+  }
+  .add_delete, .add_delete:focus {
+    background: $rjsTest-button-blue;
+    color:white;
+  }
+  .add_delete:hover {
+    background: $rjsTest-button-hover-blue;
+    transition: background .3s;
+    color: white;
+  }
+  .send, .send:focus {
+    background: $rjsTest-button-red;
+    color: white;
+  }
+  .send:hover {
+    background: $rjsTest-button-hover-red;
+    color: white;
+    transition: background .3s;
+  }
+  text-align: left;
+
+  .outboxLabel{
+    font-size: 2em;
+    color: #479CD5;
+  }
+  .btnBar {
+    display: inline-block;
+  }
+}
+
+.red { color: red; }
+
+#outbox {
+  width: 100%;
+  margin: 2em 0;
+  text-align: left;
+
+  td {
+    margin-bottom: 1em;
+    padding: 1em 0;
+  }
+  th:nth-child(1){
+    width: 3%;
+  }
+  th:nth-child(2){
+    width: 87%;
+  }
+  th:nth-child(3){
+    width: 10%;
+  }
+  tr {
+    border-bottom: solid 1px lightgray;
+  }
+  input[type="text"] {
+    width:90%;
+    //background-color: yellow;
+  }
+  .invalidInput {
+    border: solid 1px #ff0000;
+    outline: none;
+    background-color: mistyrose;
+  }
+
+  input[type="text"] {
+    padding: 2px;
+    box-shadow: 0 0 1px 1px grey;
+  }
+}

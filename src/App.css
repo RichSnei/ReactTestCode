@@ -1,0 +1,81 @@
+body {
+  min-width: 700px;
+  width: auto !important; }
+  body input, body select {
+    font-size: 14pt; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 70px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: red; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.outboxButtonBar {
+  text-align: left; }
+  .outboxButtonBar button {
+    padding: .25em 0;
+    margin: .4em 0 0 1em;
+    width: 8em; }
+  .outboxButtonBar .add_delete, .outboxButtonBar .add_delete:focus {
+    background: #459FEB;
+    color: white; }
+  .outboxButtonBar .add_delete:hover {
+    background: #146cb6;
+    transition: background .3s;
+    color: white; }
+  .outboxButtonBar .send, .outboxButtonBar .send:focus {
+    background: #E76E66;
+    color: white; }
+  .outboxButtonBar .send:hover {
+    background: #c82a1f;
+    color: white;
+    transition: background .3s; }
+  .outboxButtonBar .outboxLabel {
+    font-size: 2em;
+    color: #479CD5; }
+  .outboxButtonBar .btnBar {
+    display: inline-block; }
+
+.red {
+  color: red; }
+
+#outbox {
+  width: 100%;
+  margin: 2em 0;
+  text-align: left; }
+  #outbox td {
+    margin-bottom: 1em;
+    padding: 1em 0; }
+  #outbox th:nth-child(1) {
+    width: 3%; }
+  #outbox th:nth-child(2) {
+    width: 87%; }
+  #outbox th:nth-child(3) {
+    width: 10%; }
+  #outbox tr {
+    border-bottom: solid 1px lightgray; }
+  #outbox input[type="text"] {
+    width: 90%; }
+  #outbox .invalidInput {
+    border: solid 1px #ff0000;
+    outline: none;
+    background-color: mistyrose; }
+  #outbox input[type="text"] {
+    padding: 2px;
+    box-shadow: 0 0 1px 1px grey; }
