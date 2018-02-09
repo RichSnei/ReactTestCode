@@ -1,5 +1,5 @@
 # ReactTestCode
-This is the first piece of ReactJS code I wrote.  It was a interview tech assessment
+This is the first piece of ReactJS code I wrote.  It was for an interview tech assessment.  I had to learn react in order to finish the assessment.
 
 ## The problem
 
