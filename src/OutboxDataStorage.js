@@ -74,7 +74,7 @@ let _outboxDataFactory = function (){
             email: email,
             skill: skillId,
 
-            updateskillId: function (skillId) {
+            updateSkillId: function (skillId) {
                 this.skill = skillId;
                 outboxDataFactory.saveData();
                 return this;

@@ -141,6 +141,8 @@ class App extends React.Component {
                 this.sendObItem(obItem);
                 if (!OutboxDataStorage.deleteOutboxItem([obItem.id])) {
                     console.log("error deleting item '" + obItem.id + "'");
+                } else {
+                    console.log('deleting item (' + obItem.id + '): ' + obItem.email );
                 }
             }));
 

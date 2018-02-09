@@ -23,3 +23,8 @@ To run the app, use the following command:
 
   npm start
   
+To view the app in your browser go to the following URL:
+
+   http://localhost:3000
+   
+   

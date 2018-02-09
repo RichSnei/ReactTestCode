@@ -43,7 +43,7 @@ class OutboxRow extends Component {
     handleSkillsChange(event) {
         let item = this.state.item;
 
-        item.obItem.updateSkillsId(event.target.value);
+        item.obItem.updateSkillId(event.target.value);
         this.setState({ item: item});
         event.preventDefault();
     }
@@ -57,7 +57,7 @@ class OutboxRow extends Component {
             <td><input type="checkbox" value={item.rowChecked} onChange={this.handleRowCheckChange}/></td>
             <td> <input type="text" className={emailCss} value={item.obItem.email}
                         onChange={this.handleInputChange} autoFocus={setFocus} placeholder="Enter an email address..."/> </td>
-            <td> <select value={item.obItem.skills} onChange={this.handleSkillsChange}>
+            <td> <select value={item.obItem.skill} onChange={this.handleSkillsChange}>
                 {skillsConstants.map((skillsConstant)=>
                     <option key={skillsConstant.id} value={skillsConstant.id}>{skillsConstant.label}</option>
                 )}
