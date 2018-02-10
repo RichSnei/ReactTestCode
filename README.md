@@ -12,10 +12,10 @@ The task was to implement a very minimal version of the outbox using React with 
 
 ## Other Info 
 
-The app was create with 'create-react-app'.  It uses ReactJS, Bootstrap (and react-bootstrap) and SASS.  It assumes that
+The app was created with 'create-react-app'.  It uses ReactJS, Bootstrap (and react-bootstrap) and SASS.  It assumes that
 you have nodejs 8.9 (LTS).
 
-After pulling the source you will need to install the piece parts.  Use the following command.
+After cloning the source you will need to install the apps dependencies.  Use the following command.
 
   npm install
   
